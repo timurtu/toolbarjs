@@ -12,5 +12,5 @@ Then
     'top', // location: left, right, or bottom
     '20px', // width or height: depending on location
     ['first','second'] // array of buttons
-  });
+  );
 ```
