@@ -17,7 +17,7 @@ toolbar();
 Configure your toolbar
 
 ```javascript
-toolbar('#fff', 'top', ['hey there', 'what', 'do', 'you', 'want']);
+toolbar('rgba(255, 155, 15, 0.62)', 'top', ['hey there', 'what', 'do', 'you', 'want']);
 ```
 
 Pass in a color, location, and buttons
