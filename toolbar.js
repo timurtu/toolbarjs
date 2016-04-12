@@ -26,5 +26,11 @@ function toolbar() {
         toolbar.style.backgroundColor = 'yellow';
     }
 
+    buttons.forEach(function (button) {
+        var btnNode = document.createElement('button');
+        btnNode.textContent = button;
+        toolbar.appendChild(btnNode);
+    });
+
     document.body.appendChild(toolbar);
 }

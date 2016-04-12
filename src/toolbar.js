@@ -21,6 +21,12 @@ export default function toolbar(location = 'top',
         toolbar.style.backgroundColor = 'yellow';
     }
 
+    buttons.forEach((button) => {
+        const btnNode = document.createElement('button');
+        btnNode.textContent = button;
+        toolbar.appendChild(btnNode);
+    });
+
     document.body.appendChild(toolbar);
 
 }
