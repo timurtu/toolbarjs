@@ -1,0 +1,24 @@
+{
+  "name": "toolbarjs",
+  "version": "1.0.0",
+  "description": "npm install a toolbar for your browser",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/timurtu/toolbarjs.git"
+  },
+  "keywords": [
+    "toolbar",
+    "js",
+    "npm"
+  ],
+  "author": "Timur Uzel <timurt.uzel@gmail.com> (https://github.com/timurtu)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/timurtu/toolbarjs/issues"
+  },
+  "homepage": "https://github.com/timurtu/toolbarjs#readme"
+}
