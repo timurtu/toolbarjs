@@ -1,6 +1,5 @@
 export default function toolbar(color = 'rgba(74, 195, 184, 0.62)',
                                 location = 'top',
-                                width = '50px',
                                 buttons = ['hello, toolbar!']) {
     const toolbar = document.createElement('toolbar');
 
@@ -23,7 +22,6 @@ export default function toolbar(color = 'rgba(74, 195, 184, 0.62)',
         toolbar.style.top = '0';
         toolbar.style.left = '0';
         toolbar.style.width = '100%';
-        toolbar.style.height = width;
     }
 
     buttons.forEach((button) => {

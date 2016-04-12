@@ -7,8 +7,7 @@ exports.default = toolbar;
 function toolbar() {
     var color = arguments.length <= 0 || arguments[0] === undefined ? 'rgba(74, 195, 184, 0.62)' : arguments[0];
     var location = arguments.length <= 1 || arguments[1] === undefined ? 'top' : arguments[1];
-    var width = arguments.length <= 2 || arguments[2] === undefined ? '50px' : arguments[2];
-    var buttons = arguments.length <= 3 || arguments[3] === undefined ? ['hello, toolbar!'] : arguments[3];
+    var buttons = arguments.length <= 2 || arguments[2] === undefined ? ['hello, toolbar!'] : arguments[2];
 
     var toolbar = document.createElement('toolbar');
 
@@ -28,7 +27,6 @@ function toolbar() {
         toolbar.style.top = '0';
         toolbar.style.left = '0';
         toolbar.style.width = '100%';
-        toolbar.style.height = width;
     }
 
     buttons.forEach(function (button) {
