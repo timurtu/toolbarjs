@@ -17,11 +17,11 @@ function toolbar() {
 
         styleTop();
     } else if (location == 'bottom') {}
-}
 
-function styleTop() {
-    toolbar.style.top = '0';
-    toolbar.style.width = '100%';
-    toolbar.style.height = '20px';
-    toolbar.style.backgroundColor = 'red';
+    function styleTop() {
+        toolbar.style.top = '0';
+        toolbar.style.width = '100%';
+        toolbar.style.height = '20px';
+        toolbar.style.backgroundColor = 'red';
+    }
 }
