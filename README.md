@@ -1,7 +1,7 @@
 # toolbarjs
 Toolbar for any browser application
 
-`npm install toolbarjs`
+`npm install toolbarjs --save`
 
 Then 
 
