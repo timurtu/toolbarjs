@@ -6,7 +6,7 @@ Object.defineProperty(exports, "__esModule", {
 exports.default = toolbar;
 function toolbar() {
     var location = arguments.length <= 0 || arguments[0] === undefined ? 'top' : arguments[0];
-    var width = arguments.length <= 1 || arguments[1] === undefined ? '20px' : arguments[1];
+    var width = arguments.length <= 1 || arguments[1] === undefined ? '50px' : arguments[1];
     var buttons = arguments.length <= 2 || arguments[2] === undefined ? ['hello, toolbar!'] : arguments[2];
 
     var toolbar = document.createElement('toolbar');
@@ -20,9 +20,10 @@ function toolbar() {
 
     function styleTop() {
         toolbar.style.top = '0';
+        toolbar.style.left = '0';
         toolbar.style.width = '100%';
-        toolbar.style.height = '20px';
-        toolbar.style.backgroundColor = 'red';
+        toolbar.style.height = width;
+        toolbar.style.backgroundColor = 'yellow';
     }
 
     document.body.appendChild(toolbar);

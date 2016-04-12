@@ -1,5 +1,5 @@
 export default function toolbar(location = 'top',
-                                width = '20px',
+                                width = '50px',
                                 buttons = ['hello, toolbar!']) {
     const toolbar = document.createElement('toolbar');
 
@@ -15,9 +15,10 @@ export default function toolbar(location = 'top',
 
     function styleTop() {
         toolbar.style.top = '0';
+        toolbar.style.left = '0';
         toolbar.style.width = '100%';
-        toolbar.style.height = '20px';
-        toolbar.style.backgroundColor = 'red';
+        toolbar.style.height = width;
+        toolbar.style.backgroundColor = 'yellow';
     }
 
     document.body.appendChild(toolbar);
