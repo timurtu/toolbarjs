@@ -20,5 +20,7 @@ export default function toolbar(location = 'top',
         toolbar.style.backgroundColor = 'red';
     }
 
+    document.body.appendChild(toolbar);
+
 }
 

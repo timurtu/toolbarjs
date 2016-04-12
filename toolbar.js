@@ -24,4 +24,6 @@ function toolbar() {
         toolbar.style.height = '20px';
         toolbar.style.backgroundColor = 'red';
     }
+
+    document.body.appendChild(toolbar);
 }
