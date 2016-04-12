@@ -2,7 +2,7 @@
   "name": "toolbarjs",
   "version": "1.0.0",
   "description": "npm install a toolbar for your browser",
-  "main": "index.js",
+  "main": "toolbar.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
