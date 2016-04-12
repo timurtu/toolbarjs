@@ -8,25 +8,9 @@ Then
 ```javascript
   const toolbar = require('toolbarjs');
   
-  toolbar({
-    location: 'top', // left, right, or bottom
-    width: '20px',
-    buttons: ['first','second'],
-    stretch: true
-  });
-```
-
-Or
-
-```javascript
-  toolbar({
-    buttons: [
-      first: () {
-        doThing();
-      },
-      second: {
-        doOtherThing();
-      }
-    ]
-  });
+  toolbar(
+    'top', // location: left, right, or bottom
+    '20px', // width or height: depending on location
+    ['first','second'] // array of buttons
+  );
 ```
