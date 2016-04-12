@@ -7,7 +7,7 @@ Then
 
 ```javascript
 
-import toolbar from 'toobar';
+import toolbar from 'toolbarjs'; // es6
 toolbar();
 
 ```
@@ -21,7 +21,7 @@ toolbar('#fff', 'top', ['hey there', 'what', 'do', 'you', 'want']);
 
 ```javascript
 
-  const toolbar = require('toolbarjs');
+  const toolbar = require('toolbarjs'); // common js
   
   toolbar(
     'rgba(22, 120, 150, 0.62)', // color
