@@ -1,6 +1,6 @@
 export default function toolbar(color = 'rgba(74, 195, 184, 0.62)', location = 'top',
                                 buttons = [{
-                                  label: 'goodbye, toolbar!',
+                                  label: 'toolbarjs!',
                                   click: function (event) {
                                     console.log(`Clicked on the button ${this.label}. And the event ${event}.`)
                                   }
@@ -33,6 +33,20 @@ function setLocation(toolbar, location) {
       toolbar.style.width = '100%'
       break
     case 'bottom':
+      toolbar.style.top = '0'
+      toolbar.style.left = '0'
+      break
+    case 'left': 
+      toolbar.style.left = '0'
+      toolbar.style.top = '0'
+      toolbar.style.width = '15%'
+      toolbar.style.height = '100%'
+      break
+    case 'right':
+      toolbar.style.right = '0'
+      toolbar.style.top = '0'
+      toolbar.style.width = '15%'
+      toolbar.style.height = '100%'
       break
   }
 }

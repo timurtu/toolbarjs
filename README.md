@@ -1,31 +1,60 @@
 # toolbarjs
-Toolbar for any browser application
+    npm install toolbarjs
+    // or
+    jspm install toolbarjs
 
-`npm install toolbarjs --save`
-
-or
-
-`jspm install toolbarjs`
-
-Then
+Then in your project
 
 ```javascript
-import toolbar from 'toolbarjs';
+  import toolbar from 'toolbarjs'
 
-toolbar();
+  toolbar()
 ```
-Configure your toolbar
+Try giving your toolbar different color
 
 ```javascript
-toolbar('rgba(255, 155, 15, 0.62)', 'top', ['hey there', 'what', 'do', 'you', 'want']);
+  toolbar('red')
 ```
 
-Pass in a color, location, and buttons
+```javascript
+  toolbar('blue')
+```
 
 ```javascript
-  toolbar(
-    'rgba(22, 120, 150, 0.62)', // color
-    'top', // location: left, right, or bottom
-    ['first', 'second'] // array of buttons
-  );
+  toolbar('rgba(22, 120, 150, 0.62)')
+```
+
+Then give it a location
+
+```javascript
+    toolbar(
+
+      'rgba(22, 120, 150, 0.62)',
+
+      'left' // default is top
+    )
+```
+
+Finally, define an array of buttons!
+
+```javascript
+    toolbar(
+
+      'rgba(22, 120, 150, 0.62)',
+
+      'left', // default is top
+
+      [{
+        label: 'Foo',
+        click: event => {
+          console.log('Foo was clicked.')
+        }
+      },
+      {
+        label: 'Bar',
+        click: event => {
+          console.log('Bar was clicked.')
+        }
+      }]
+    )
 ```
