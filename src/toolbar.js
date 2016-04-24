@@ -15,6 +15,8 @@ export default function toolbar(color = 'rgba(74, 195, 184, 0.62)', location = '
   createButtons(toolbar, buttons)
 
   document.body.insertBefore(toolbar, document.body.firstChild);
+
+  return toolbar
 }
 
 function styleToolbar(toolbar, color) {
