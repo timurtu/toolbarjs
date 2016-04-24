@@ -1,17 +1,12 @@
-const toolbar = document.createElement('toolbar')
+export default function toolbar(color = 'rgba(74, 195, 184, 0.62)', location = 'top',
+                                buttons = [{
+                                  label: 'goodbye, toolbar!',
+                                  click: function (event) {
+                                    console.log(`Clicked on the button ${this.label}. And the event ${event}.`)
+                                  }
+                                }]) {
 
-export default function toolbar(
-  color = 'rgba(74, 195, 184, 0.62)',
-  location = 'top',
-  buttons = [
-    {
-      label: 'goodbye, toolbar!',
-      click: function (event) {
-        console.log(`Clicked on the button with the label ${this.label}. 
-          And the event ${event}.`)
-        }
-      }
-    ]) {
+  const toolbar = document.createElement('toolbar')
 
   styleToolbar(toolbar)
 
