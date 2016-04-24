@@ -2,7 +2,7 @@ export default function toolbar(color = 'rgba(74, 195, 184, 0.62)', location = '
                                 buttons = [{
                                   label: 'toolbarjs!',
                                   click: (event) => {
-                                    console.log(`Clicked on the button ${label}. And the event ${event}.`)
+                                    console.log(event)
                                   }
                                 }]) {
 
