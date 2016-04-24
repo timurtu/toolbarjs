@@ -1,6 +1,6 @@
 export default function toolbar(...options) {
 
-  let [ color, location, buttons ] = options
+  let [ color, location, ...buttons ] = options
 
   const toolbar = document.createElement('toolbar')
 
@@ -50,7 +50,7 @@ function setLocation(toolbar, location) {
   }
 }
 
-function createButtons(toolbar, buttons) {
+function createButtons(toolbar, ...buttons) {
   buttons.forEach((button) => {
     const btnNode = document.createElement('button')
     btnNode.innerHTML = button.label
