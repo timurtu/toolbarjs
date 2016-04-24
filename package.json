@@ -1,6 +1,6 @@
 {
   "name": "toolbarjs",
-  "version": "1.4.0",
+  "version": "1.4.1",
   "description": "npm install a toolbar for your browser",
   "main": "lib/toolbar.js",
   "files": [
