@@ -1,7 +1,7 @@
 export default function toolbar(color = 'rgba(74, 195, 184, 0.62)', location = 'top',
                                 buttons = [{
                                   label: 'toolbarjs!',
-                                  click: function (event) {
+                                  click: (event) => {
                                     console.log(`Clicked on the button ${this.label}. And the event ${event}.`)
                                   }
                                 }]) {
@@ -55,7 +55,7 @@ function createButtons(toolbar, buttons) {
   buttons.forEach((button) => {
     const btnNode = document.createElement('button')
     btnNode.textContent = button.label
-    btnNode.onclick = event => button.click
+    btnNode.addEventListener('click', button.click)
     toolbar.appendChild(btnNode)
   })
 }
