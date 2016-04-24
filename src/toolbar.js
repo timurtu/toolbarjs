@@ -14,7 +14,7 @@ export default function toolbar(color = 'rgba(74, 195, 184, 0.62)', location = '
 
   createButtons(toolbar, buttons)
 
-  document.body.appendChild(toolbar);
+  document.body.insertBefore(toolbar, document.body.firstChild);
 }
 
 function styleToolbar(toolbar, color) {
@@ -37,7 +37,7 @@ function setLocation(toolbar, location) {
       toolbar.style.left = '0'
       toolbar.style.width = '100%'
       break
-    case 'left': 
+    case 'left':
       toolbar.style.left = '0'
       toolbar.style.top = '0'
       toolbar.style.width = '15%'
