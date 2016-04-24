@@ -14,7 +14,6 @@ export default function toolbar(
   // Set location
   switch(location) {
     case 'top':
-      
       break
     case 'bottom':
       break
@@ -35,6 +34,7 @@ export default function toolbar(
 
   buttons.forEach((button) => {
     const btnNode = document.createElement('button');
+    
     btnNode.textContent = button;
     toolbar.appendChild(btnNode);
   });

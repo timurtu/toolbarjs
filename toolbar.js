@@ -7,7 +7,7 @@ exports.default = toolbar;
 function toolbar() {
   var color = arguments.length <= 0 || arguments[0] === undefined ? 'rgba(74, 195, 184, 0.62)' : arguments[0];
   var location = arguments.length <= 1 || arguments[1] === undefined ? 'top' : arguments[1];
-  var buttons = arguments.length <= 2 || arguments[2] === undefined ? ['hello, toolbar!'] : arguments[2];
+  var buttons = arguments.length <= 2 || arguments[2] === undefined ? ['goodbye, toolbar!'] : arguments[2];
 
 
   var toolbar = document.createElement('toolbar');
@@ -21,7 +21,6 @@ function toolbar() {
   // Set location
   switch (location) {
     case 'top':
-
       break;
     case 'bottom':
       break;
@@ -39,6 +38,7 @@ function toolbar() {
 
   buttons.forEach(function (button) {
     var btnNode = document.createElement('button');
+
     btnNode.textContent = button;
     toolbar.appendChild(btnNode);
   });
