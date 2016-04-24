@@ -8,7 +8,7 @@ export default function toolbar(color = 'rgba(74, 195, 184, 0.62)', location = '
 
   const toolbar = document.createElement('toolbar')
 
-  styleToolbar(toolbar)
+  styleToolbar(toolbar, color)
 
   setLocation(location)
 
@@ -17,7 +17,7 @@ export default function toolbar(color = 'rgba(74, 195, 184, 0.62)', location = '
   document.body.appendChild(toolbar);
 }
 
-function styleToolbar(toolbar) {
+function styleToolbar(toolbar, color) {
   toolbar.style.position = 'fixed'
   toolbar.style.margin = '0'
   toolbar.style.padding = '12px'
