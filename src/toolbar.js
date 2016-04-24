@@ -10,9 +10,9 @@ export default function toolbar(color = 'rgba(74, 195, 184, 0.62)', location = '
 
   styleToolbar(toolbar, color)
 
-  setLocation(location)
+  setLocation(toolbar, location)
 
-  createButtons(buttons)
+  createButtons(toolbar, buttons)
 
   document.body.appendChild(toolbar);
 }
@@ -25,7 +25,7 @@ function styleToolbar(toolbar, color) {
   toolbar.style.backgroundColor = color
 }
 
-function setLocation(location) {
+function setLocation(toolbar, location) {
   switch (location) {
     case 'top':
       toolbar.style.top = '0'
@@ -37,7 +37,7 @@ function setLocation(location) {
   }
 }
 
-function createButtons(buttons) {
+function createButtons(toolbar, buttons) {
   buttons.forEach((button) => {
     const btnNode = document.createElement('button')
     btnNode.textContent = button.label
