@@ -55,7 +55,7 @@ function setLocation(toolbar, location) {
 function createButtons(toolbar, buttons) {
   buttons.forEach((button) => {
     const btnNode = document.createElement('button')
-    btnNode.textContent = button.label
+    btnNode.innerHTML = button.label
     btnNode.addEventListener('click', button.click)
     toolbar.appendChild(btnNode)
   })
