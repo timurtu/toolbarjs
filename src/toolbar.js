@@ -1,10 +1,6 @@
-export default function toolbar(color = 'rgba(74, 195, 184, 0.62)', location = 'top',
-                                buttons = [{
-                                  label: 'toolbarjs!',
-                                  click: (event) => {
-                                    console.log(event)
-                                  }
-                                }]) {
+export default function toolbar(...options) {
+
+  let [ color, location, buttons ] = options
 
   const toolbar = document.createElement('toolbar')
 
