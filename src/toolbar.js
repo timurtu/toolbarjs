@@ -33,8 +33,9 @@ function setLocation(toolbar, location) {
       toolbar.style.width = '100%'
       break
     case 'bottom':
-      toolbar.style.top = '0'
+      toolbar.style.bottom = '0'
       toolbar.style.left = '0'
+      toolbar.style.width = '100%'
       break
     case 'left': 
       toolbar.style.left = '0'
