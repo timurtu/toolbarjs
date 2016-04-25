@@ -1,4 +1,4 @@
-export default function toolbar(options) {
+export default function toolbar(...options) {
 
   let [ color, location, ...buttons ] = options
 
