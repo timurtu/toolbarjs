@@ -15,7 +15,7 @@ export default function toolbar(...options) {
   return toolbar
 }
 
-function styleToolbar(toolbar, color = rgba(30, 145, 200, 0.7)) {
+function styleToolbar(toolbar, color = 'rgba(30, 145, 200, 0.7)') {
   toolbar.style.position = 'fixed'
   toolbar.style.margin = '0'
   toolbar.style.padding = '12px'
