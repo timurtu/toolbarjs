@@ -59,7 +59,7 @@ function setLocation(toolbar, location) {
   }
 }
 
-function createButtons(toolbar, ...buttons) {
+function createButtons(toolbar, buttons) {
   buttons.forEach((button) => {
     const btnNode = document.createElement('button')
     btnNode.innerHTML = button.label
