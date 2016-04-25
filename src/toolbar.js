@@ -9,7 +9,7 @@ export default function toolbar(...options) {
   //     click: event => {
   //       console.log(event)
   //     }
-    }]
+  //   }]
 
   const toolbar = document.createElement('toolbar')
 
