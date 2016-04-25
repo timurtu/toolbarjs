@@ -2,10 +2,6 @@ export default function toolbar(...options) {
 
   let [ color, location, buttons ] = options
 
-  // color = rgba(30, 145, 200, 0.7),
-  //   location = 'top',
-  //
-
   const toolbar = document.createElement('toolbar')
 
   styleToolbar(toolbar, color)
@@ -19,7 +15,7 @@ export default function toolbar(...options) {
   return toolbar
 }
 
-function styleToolbar(toolbar, color) {
+function styleToolbar(toolbar, color = rgba(30, 145, 200, 0.7)) {
   toolbar.style.position = 'fixed'
   toolbar.style.margin = '0'
   toolbar.style.padding = '12px'
@@ -27,7 +23,7 @@ function styleToolbar(toolbar, color) {
   toolbar.style.backgroundColor = color
 }
 
-function setLocation(toolbar, location) {
+function setLocation(toolbar, location = 'top') {
   switch (location) {
     case 'top':
       toolbar.style.top = '0'
@@ -55,9 +51,9 @@ function setLocation(toolbar, location) {
 }
 
 function createButtons(toolbar, buttons = [{
-  label: 'tbjs',
+  label: 'toolbarjs',
   click: event => {
-    console.log(event)
+    console.log('Add some buttons!')
   }
 }]) {
   buttons.forEach((button) => {
@@ -67,4 +63,3 @@ function createButtons(toolbar, buttons = [{
     toolbar.appendChild(btnNode)
   })
 }
-
