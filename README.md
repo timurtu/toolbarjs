@@ -5,7 +5,7 @@ npm install toolbarjs
 ```
 You can also install toolbarjs as a jspm dependency
 ```
-jspm install toolbarjs
+jspm install npm:toolbarjs
 ```
 Then in your project
 
