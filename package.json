@@ -8,7 +8,8 @@
   ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "prepublish": "gulp build"
+    "prepublish": "gulp build",
+    "bugfix": "git add . && git commit -m 'bugfix' && npm version patch && npm publish"
   },
   "repository": {
     "type": "git",
