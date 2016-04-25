@@ -4,12 +4,7 @@ export default function toolbar(...options) {
 
   // color = rgba(30, 145, 200, 0.7),
   //   location = 'top',
-  //   buttons = [{
-  //     label: 'tbjs',
-  //     click: event => {
-  //       console.log(event)
-  //     }
-  //   }]
+  //
 
   const toolbar = document.createElement('toolbar')
 
@@ -59,7 +54,12 @@ function setLocation(toolbar, location) {
   }
 }
 
-function createButtons(toolbar, buttons) {
+function createButtons(toolbar, buttons = [{
+  label: 'tbjs',
+  click: event => {
+    console.log(event)
+  }
+}]) {
   buttons.forEach((button) => {
     const btnNode = document.createElement('button')
     btnNode.innerHTML = button.label
