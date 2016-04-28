@@ -3,6 +3,7 @@ export default function toolbar(...options) {
   let [ color, location, buttons ] = options
 
   const toolbar = document.createElement('toolbar')
+  const toolbarContainer = document.createElement('toolbar-container')
 
   styleToolbar(toolbar, color)
 
@@ -10,12 +11,19 @@ export default function toolbar(...options) {
 
   createButtons(toolbar, buttons)
 
-  document.body.insertBefore(toolbar, document.body.firstChild);
+  toolbarContainer.appendChild(toolbar)
+
+  toolbarContainer.style.position = 'relative'
+  toolbarContainer.style.zIndex = '999999'
+
+  document.body.insertBefore(toolbarContainer, document.body.firstChild);
+
 
   return toolbar
 }
 
 function styleToolbar(toolbar, color = 'rgba(30, 145, 200, 0.7)') {
+
   toolbar.style.position = 'fixed'
   toolbar.style.margin = '0'
   toolbar.style.padding = '12px'
@@ -24,6 +32,9 @@ function styleToolbar(toolbar, color = 'rgba(30, 145, 200, 0.7)') {
 }
 
 function setLocation(toolbar, location = 'top') {
+
+  const width = '15%'
+
   switch (location) {
     case 'top':
       toolbar.style.top = '0'
@@ -38,13 +49,13 @@ function setLocation(toolbar, location = 'top') {
     case 'left':
       toolbar.style.left = '0'
       toolbar.style.top = '0'
-      toolbar.style.width = '15%'
+      toolbar.style.width = width
       toolbar.style.height = '100%'
       break
     case 'right':
       toolbar.style.right = '0'
       toolbar.style.top = '0'
-      toolbar.style.width = '15%'
+      toolbar.style.width = width
       toolbar.style.height = '100%'
       break
   }
@@ -57,9 +68,13 @@ function createButtons(toolbar, buttons = [{
   }
 }]) {
   buttons.forEach((button) => {
+
     const btnNode = document.createElement('button')
+
     btnNode.innerHTML = button.label
+
     btnNode.addEventListener('click', button.click)
+
     toolbar.appendChild(btnNode)
   })
 }
